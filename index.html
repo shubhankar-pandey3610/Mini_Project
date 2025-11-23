@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ResumeCraft — Free Resume Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo-badge">
+          <span>R</span>
+        </div>
+        <div>
+          <div class="logo-text-main">ResumeCraft</div>
+          <div class="logo-text-sub">Mini project · HTML · CSS · JS</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a onclick="scrollToSection('features')">Features</a>
+        <a onclick="scrollToSection('builder')">Builder</a>
+        <a onclick="scrollToSection('preview')">Preview</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn-ghost" type="button">Sign in</button>
+        <button class="btn-primary" type="button" onclick="scrollToSection('builder')">
+          Start free
+          <span>→</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hero-eyebrow">Free online resume builder</div>
+        <h1 class="hero-title">
+          Build a job-ready
+          <span class="hero-gradient">resume in minutes.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A clean, simple resume builder made for students and freshers.
+          No sign-up required in this mini project. Just type, preview and
+          save as PDF.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" type="button" onclick="scrollToSection('builder')">
+            Build my resume
+            <span>⚡</span>
+          </button>
+          <button class="btn-ghost" type="button" onclick="scrollToSection('preview')">
+            Live preview
+          </button>
+        </div>
+        <div class="hero-meta">
+          <span><span class="dot"></span> Auto formatted layout</span>
+          <span>✓ Responsive design</span>
+          <span>✓ Made with pure HTML / CSS / JS</span>
+        </div>
+      </div>
+
+      <aside class="hero-preview">
+        <div class="hero-pill"></div>
+        <div class="hero-preview-inner">
+          <div class="mini-metrics">
+            <div class="metric-card">
+              <div class="metric-label">You’re almost done</div>
+              <div class="metric-value">78% complete</div>
+              <div class="metric-chip-row">
+                <span class="metric-chip">Profile ✓</span>
+                <span class="metric-chip">Experience ✓</span>
+                <span class="metric-chip">Skills ▢</span>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">ATS friendly</div>
+              <div class="metric-value">Student template</div>
+              <p class="feature-text">
+                Clean fonts, bullet points, no fancy columns. Perfect for
+                college placements.
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-header">
+              <div class="avatar-circle">VP</div>
+              <div class="resume-header-text">
+                <h3 id="mini-name">Vipin Pandey</h3>
+                <p id="mini-role">Computer Science Student</p>
+              </div>
+            </div>
+            <p class="resume-item-desc" id="mini-summary">
+              Passionate about problem solving, C programming and web
+              development. Looking for opportunities to learn and grow.
+            </p>
+
+            <div class="resume-section-title">Experience</div>
+            <div class="resume-line"></div>
+            <div>
+              <div class="resume-item-title" id="mini-exp-title">
+                Web Developer Intern
+              </div>
+              <div class="resume-item-sub" id="mini-exp-company">
+                ABC Tech · 2024
+              </div>
+            </div>
+
+            <div class="resume-section-title" style="margin-top: 0.5rem;">Skills</div>
+            <div class="resume-line"></div>
+            <p class="resume-item-desc" id="mini-skills">
+              C · C++ · HTML · CSS · JavaScript · Data Structures
+            </p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Why ResumeCraft?</div>
+          <h2 class="section-title">Designed for college projects & real jobs.</h2>
+        </div>
+        <p class="section-subtitle">
+          The goal is the same as popular resume websites: help you create a
+          professional resume fast — but with simple code that you can
+          understand and explain in your viva.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">①</div>
+          <div class="feature-title">Three guided steps</div>
+          <p class="feature-text">
+            Step-wise form for profile, experience, education & skills.
+            Progress bar updates as you move between steps.
+          </p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">👁️</div>
+          <div class="feature-title">Live resume preview</div>
+          <p class="feature-text">
+            Whatever you type in the form instantly appears on the right
+            side as a printable resume.
+          </p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📄</div>
+          <div class="feature-title">Print / Save as PDF</div>
+          <p class="feature-text">
+            Use the browser’s print dialog (Ctrl + P) from inside the
+            preview window to download your resume as PDF.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUILDER + PREVIEW -->
+    <section class="section" id="builder">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Builder</div>
+          <h2 class="section-title">Fill your details once. We format it for you.</h2>
+        </div>
+        <p class="section-subtitle">
+          Start with a clean template. You can customise and extend fields
+          as per your mini project requirements.
+        </p>
+      </div>
+
+      <div class="builder-layout">
+        <!-- LEFT: FORM -->
+        <div class="card-shell">
+          <div class="card-inner">
+            <div class="builder-header">
+              <div>
+                <h2>3-step resume builder</h2>
+                <p class="builder-caption">
+                  Use basic information only — no login, no server, just
+                  pure front-end.
+                </p>
+              </div>
+              <span class="badge-soft">
+                <span class="badge-soft-dot"></span>
+                Auto save in this session
+              </span>
+            </div>
+
+            <div class="progress-shell">
+              <div class="progress-label-row">
+                <span id="progress-label">Step 1 of 3</span>
+                <span id="progress-percent">33% complete</span>
+              </div>
+              <div class="progress-bar-outer">
+                <div class="progress-bar-inner" id="progress-bar"></div>
+              </div>
+              <div class="steps-row">
+                <div class="step-pill active" data-step-pill="1">
+                  <span class="step-number">1</span>
+                  <span>Profile</span>
+                  <span>⋯</span>
+                </div>
+                <div class="step-pill" data-step-pill="2">
+                  <span class="step-number">2</span>
+                  <span>Experience</span>
+                  <span>⋯</span>
+                </div>
+                <div class="step-pill" data-step-pill="3">
+                  <span class="step-number">3</span>
+                  <span>Education & skills</span>
+                  <span>⋯</span>
+                </div>
+              </div>
+            </div>
+
+            <form id="resume-form">
+              <!-- STEP 1 -->
+              <div class="step grid-2 active" data-step="1">
+                <div class="field">
+                  <label for="fullName">Full name</label>
+                  <input id="fullName" name="fullName" placeholder="e.g. Vipin Kumar" />
+                </div>
+                <div class="field">
+                  <label for="roleTitle">Role / headline</label>
+                  <input
+                    id="roleTitle"
+                    name="roleTitle"
+                    placeholder="e.g. B.Tech CSE Student"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" placeholder="you@example.com" />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" placeholder="+91-XXXXXXXXXX" />
+                </div>
+                <div class="field">
+                  <label for="city">City</label>
+                  <input id="city" name="city" placeholder="e.g. Lucknow, UP" />
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="summary">Profile summary</label>
+                  <textarea
+                    id="summary"
+                    name="summary"
+                    placeholder="2–3 lines about your skills, interests and career goal."
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="step grid-2" data-step="2">
+                <div class="field">
+                  <label for="expTitle">Job / Position</label>
+                  <input
+                    id="expTitle"
+                    name="expTitle"
+                    placeholder="e.g. Web Developer Intern"
+                  />
+                </div>
+                <div class="field">
+                  <label for="expCompany">Company / Organisation</label>
+                  <input
+                    id="expCompany"
+                    name="expCompany"
+                    placeholder="e.g. ABC Technologies"
+                  />
+                </div>
+                <div class="field">
+                  <label for="expStart">Start year</label>
+                  <input id="expStart" name="expStart" placeholder="e.g. 2024" />
+                </div>
+                <div class="field">
+                  <label for="expEnd">End year</label>
+                  <input id="expEnd" name="expEnd" placeholder="e.g. Present" />
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="expDesc">What did you do?</label>
+                  <textarea
+                    id="expDesc"
+                    name="expDesc"
+                    placeholder="Write 2–4 bullet style sentences about your work, project or internship."
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div class="step grid-2" data-step="3">
+                <div class="field">
+                  <label for="eduDegree">Degree</label>
+                  <input
+                    id="eduDegree"
+                    name="eduDegree"
+                    placeholder="e.g. B.Tech in Computer Science"
+                  />
+                </div>
+                <div class="field">
+                  <label for="eduCollege">College</label>
+                  <input
+                    id="eduCollege"
+                    name="eduCollege"
+                    placeholder="e.g. AKTU Affiliated College"
+                  />
+                </div>
+                <div class="field">
+                  <label for="eduStart">Start year</label>
+                  <input id="eduStart" name="eduStart" placeholder="e.g. 2023" />
+                </div>
+                <div class="field">
+                  <label for="eduEnd">Graduation year</label>
+                  <input id="eduEnd" name="eduEnd" placeholder="e.g. 2027" />
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="skills">Skills (comma separated)</label>
+                  <input
+                    id="skills"
+                    name="skills"
+                    placeholder="C, C++, HTML, CSS, JavaScript, Data Structures"
+                  />
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="extra">Projects / achievements (optional)</label>
+                  <textarea
+                    id="extra"
+                    name="extra"
+                    placeholder="Mention important projects, hackathons, certifications, positions of responsibility etc."
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+
+            <div class="builder-footer">
+              <div class="builder-footer-left">
+                <button class="btn-small" type="button" id="prev-btn">
+                  ← Previous
+                </button>
+                <button class="btn-small primary" type="button" id="next-btn">
+                  Next →
+                </button>
+              </div>
+              <p class="hint">
+                Tip: You can jump steps anytime, your data stays on this page.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: PREVIEW -->
+        <div class="card-shell" id="preview">
+          <div class="card-inner">
+            <div class="preview-header">
+              <div>
+                <div class="preview-title">Live resume preview</div>
+                <div class="preview-subtitle">
+                  Everything here is generated from the form on the left.
+                </div>
+              </div>
+              <button class="btn-small primary" type="button" id="download-btn">
+                Print / Save as PDF
+              </button>
+            </div>
+
+            <article class="preview-paper" id="preview-paper">
+              <!-- Content will be filled by JavaScript -->
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>Made for <strong>B.Tech / college mini project</strong> using only HTML, CSS and JavaScript.</span>
+      <span>Inspired by modern resume builders like resume.com, but with original code &amp; UI.</span>
+    </footer>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
